@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-</head>
-<body>
-<div class="container">
-  <ul class="collection with-header todo-list">
-    <li class="collection-header">
-      <h4>Todos</h4>
-      <button class="waves-effect waves-light btn filter" value="">All</button>
-      <button class="waves-effect waves-light btn filter" value="Open">Open</button>
-      <button class="waves-effect waves-light btn filter" value="In progress">In progress</button>
-      <button class="waves-effect waves-light btn filter" value="Close">Close</button>
-    </li>
-  </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="collection with-header todo-list">
+        <li class="collection-header">
+          <h4>Todos</h4>
+          <div class="row controls">
+            <div class="col s6">
+              <button class="waves-effect waves-light btn filter" value="">
+                All
+              </button>
+              <button class="waves-effect waves-light btn filter" value="Open">
+                Open
+              </button>
+              <button
+                class="waves-effect waves-light btn filter"
+                value="In progress"
+              >
+                In progress
+              </button>
+              <button class="waves-effect waves-light btn filter" value="Close">
+                Close
+              </button>
+            </div>
+            <div class="col s6">
+              <div class="input-field">
+                <input id="search" type="text" class="search-input" />
+                <label for="search">Search</label>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add Todo</a>
-</div>
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
+        >Add Todo</a
+      >
+    </div>
 
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <form class="todo-form">
-      <div class="input-field">
-        <input id="todo" type="text" class="todo-input">
-        <label for="todo">New todo</label>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <form class="todo-form">
+          <div class="input-field">
+            <input id="todo" type="text" class="todo-input" />
+            <label for="todo">New todo</label>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-  </div>
-</div>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="text/javascript" src="./index.js"></script>
-</body>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Close</a
+        >
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
